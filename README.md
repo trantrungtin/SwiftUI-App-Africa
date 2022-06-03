@@ -7,18 +7,13 @@
 # SwiftUI 2 - Africa
 <br />
 <p align="center">
-  <a href="https://github.com/alexanderritik/Best-README-Template">
+  <a href="https://github.com/trantrungtin/SwiftUI-App-Africa">
     <img src="images/logo.jpeg" alt="Logo" width="512" height="310">
   </a>
   <p align="center">
     One thing is sure, we will discover new programming concepts and more new SwiftUI 2 features in this section.
   </p>
 </p>
-
-<!-- <p align="row">
-<img src= "https://media.giphy.com/media/HYOlBKJBqgAfe/giphy.gif" width="400" >
-<img src= "https://media.giphy.com/media/HYOlBKJBqgAfe/giphy.gif" width="400" >
-</p> -->
 
 ## Topics are covered:
 
