@@ -15,7 +15,7 @@
 		D72FCEED2849F73F000A2D5B /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D72FCEEC2849F73F000A2D5B /* LocationModel.swift */; };
 		D76E3F16284A6DF800B001A0 /* AnimalGridItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76E3F15284A6DF800B001A0 /* AnimalGridItemView.swift */; };
 		D76E3F1C284A747800B001A0 /* Stickers.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D76E3F1B284A747800B001A0 /* Stickers.xcassets */; };
-		D76E3F20284A747800B001A0 /* Stickers.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D76E3F19284A747500B001A0 /* Stickers.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D76E3F20284A747800B001A0 /* Stickers.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D76E3F19284A747500B001A0 /* Stickers.appex */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D76E3F26284A769500B001A0 /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76E3F25284A769500B001A0 /* CreditsView.swift */; };
 		D76E3F29284A784300B001A0 /* CenterModifer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76E3F28284A784300B001A0 /* CenterModifer.swift */; };
 		D7B3D5B42849C755007B2C0F /* InsetGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B3D5B32849C755007B2C0F /* InsetGalleryView.swift */; };
@@ -91,6 +91,7 @@
 		D76E3F1D284A747800B001A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D76E3F25284A769500B001A0 /* CreditsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsView.swift; sourceTree = "<group>"; };
 		D76E3F28284A784300B001A0 /* CenterModifer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterModifer.swift; sourceTree = "<group>"; };
+		D76E3F2A284A796200B001A0 /* Africa.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Africa.entitlements; sourceTree = "<group>"; };
 		D7B3D5B32849C755007B2C0F /* InsetGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetGalleryView.swift; sourceTree = "<group>"; };
 		D7B3D5B52849CB7C007B2C0F /* InsetFaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetFaceView.swift; sourceTree = "<group>"; };
 		D7B3D5B72849E279007B2C0F /* InsetMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetMapView.swift; sourceTree = "<group>"; };
@@ -186,6 +187,7 @@
 		D7E95ACD284992510032EBBD /* Africa */ = {
 			isa = PBXGroup;
 			children = (
+				D76E3F2A284A796200B001A0 /* Africa.entitlements */,
 				D76E3F27284A783100B001A0 /* Modifer */,
 				D72FCEE92849F3A7000A2D5B /* Helper */,
 				D7E95B0E2849A6310032EBBD /* Extension */,
@@ -438,6 +440,7 @@
 /* Begin PBXTargetDependency section */
 		D76E3F1F284A747800B001A0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			platformFilter = ios;
 			target = D76E3F18284A747500B001A0 /* Stickers */;
 			targetProxy = D76E3F1E284A747800B001A0 /* PBXContainerItemProxy */;
 		};
@@ -459,6 +462,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tinonsoftware.Africa.Stickers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -479,6 +483,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tinonsoftware.Africa.Stickers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -605,6 +610,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Africa/Africa.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Africa/Preview Content\"";
@@ -617,6 +623,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 14.7;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -624,6 +631,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tinonsoftware.Africa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -635,6 +643,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Africa/Africa.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Africa/Preview Content\"";
@@ -647,6 +656,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 14.7;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -654,6 +664,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tinonsoftware.Africa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
